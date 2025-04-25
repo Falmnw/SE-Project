@@ -18,6 +18,8 @@
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "github:staylor/react-helmet-async",
     "react-router-dom": "^7.5.0"
   },
   "devDependencies": {

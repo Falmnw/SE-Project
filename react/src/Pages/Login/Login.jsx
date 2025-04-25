@@ -1,13 +1,14 @@
 import React from 'react';
-import './assets/css/login.css';
-import './assets/scss/login.scss';
+import './Login.css';
 
 // Import gambar
-import logo from './assets/images/logo.svg';
-import loginImg from './assets/images/login.jpg';
+import logo from './assets/images/logoBrand.png';
+import loginImg from './assets/images/imageLoginReg.png';
 
 const Login = () => {
   return (
+    <>
+      <title>Login - Purrfect Mate</title>
     <main>
       <div className="container-fluid">
         <div className="row">
@@ -46,9 +47,10 @@ const Login = () => {
                   value="Login"
                 />
               </form>
-              <a href="#!" className="forgot-password-link">
-                Forgot password?
-              </a>
+
+              {/* Spacer to replace forgot-password for spacing */}
+              <div className="spacer-after-login-btn" />
+
               <p className="login-wrapper-footer-text">
                 Don't have an account?{' '}
                 <a href="#!" className="text-reset">
@@ -63,6 +65,7 @@ const Login = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
