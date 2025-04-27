@@ -8,7 +8,7 @@ import registerImg from './assets/images/imageLoginReg.png';
 const Register = () => {
   return (
     <>
-      <title>Register - Purrfect Mate</title>
+      <title>Register - PurrfectMate</title>
     <main>
       <div className="container-fluid">
         <div className="row">

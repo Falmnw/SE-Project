@@ -8,7 +8,7 @@ import loginImg from './assets/images/imageLoginReg.png';
 const Login = () => {
   return (
     <>
-      <title>Login - Purrfect Mate</title>
+      <title>Login - PurrfectMate</title>
     <main>
       <div className="container-fluid">
         <div className="row">
