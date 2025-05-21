@@ -6,7 +6,13 @@ import placeholderLogo from './assets/images/logoBrand.png';
 import dashboardImage from './assets/images/gridFrame.png';
 import forumImage from './assets/images/forum.png';
 import loveImage from './assets/images/love.png'; 
+import loveIcon from './assets/images/loveIcon.png'; 
 import bellIcon from './assets/images/bell.png';
+import pawIcon from './assets/images/paw.png';
+import dogIcon from './assets/images/dogLogo.png';
+import catIcon from './assets/images/catLogo.png';
+import reverseIcon from './assets/images/reverse.png';
+
 
 const Dashboard = () => {
   const [activePage, setActivePage] = useState('Dashboard');
@@ -15,7 +21,58 @@ const Dashboard = () => {
   const renderContent = () => {
     switch (activePage) {
       case 'Dashboard':
-        return <img src={dashboardImage} alt="Dashboard" className="placeholder-image" />;
+  return (
+    <div className="overview-tab">
+      <h1 className="tab-title">Overview</h1>
+      
+      <div className="stats-section">
+        {/* Pet Count Card */}
+        <div className="stat-card">
+          <div className="stat-header">
+            <img src={pawIcon} alt="Breeding" className="stat-icon" />
+            <h3>Jumlah Hewan Peliharaan</h3>
+          </div>
+          <ul className="stat-list">
+            <li>
+              <img src={catIcon} alt="Cat" className="animal-icon" />
+              <span className="stat-value">2</span>
+              <span className="stat-labelCat">Kucing</span>
+            </li>
+            <li>
+              <img src={dogIcon} alt="Dog" className="animal-icon" />
+              <span className="stat-value">1</span>
+              <span className="stat-labelDog">Anjing</span>
+            </li>
+          </ul>
+          <div className="stat-footer">
+            Total <span className="total-value">3</span> Hewan
+          </div>
+        </div>
+
+        {/* Breeding Requests Card */}
+        <div className="stat-card">
+          <div className="stat-header">
+            <img src={reverseIcon} alt="Paw" className="stat-icon" />
+            <h3>Total Permintaan Breeding</h3>
+          </div>
+          <div className="stat-main-value">
+            <span className="large-number">20</span> Permintaan
+          </div>
+        </div>
+
+        {/* Successful Matches Card */}
+        <div className="stat-card">
+          <div className="stat-header">
+            <img src={loveIcon} alt="Matches" className="stat-icon" />
+            <h3>Match Berhasil</h3>
+          </div>
+          <div className="stat-main-value">
+            <span className="large-number">13</span> Match sudah berhasil dilakukan
+          </div>
+        </div>
+      </div>
+    </div>
+  );
       case 'Forum':
         return <img src={forumImage} alt="Forum" className="placeholder-image" />;
       case 'Kucing':

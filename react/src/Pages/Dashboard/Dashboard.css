@@ -269,3 +269,104 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* Overview Tab Styles */
+.overview-tab {
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(117, 106, 106, 0.08);
+}
+
+.tab-title {
+  color: #000000;
+  font-size: 2rem;
+  font-style: bold;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+}
+
+.stat-card {
+  background: #f8faf9;
+  border-radius: 10px;
+  padding: 18px;
+  border-left: 4px solid #00b140;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+}
+
+.stat-header h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.stat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.stat-list li {
+  display: flex;
+  align-items: baseline;
+  padding: 6px 0;
+}
+
+.stat-value {
+  color: #00b140;
+  font-weight: 600;
+  font-size: 1.1rem;
+  min-width: 30px;
+  display: inline-block;
+}
+
+.stat-labelCat {
+  color: #FFA552;
+  margin-left: 8px;
+}
+
+.stat-labelDog {
+  color: #7EC8E3;
+  margin-left: 8px;
+}
+
+.stat-footer {
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+  color: #6666667d;
+  font-size: 0.9rem;
+}
+
+.total-value {
+  color: #000000;
+  font-weight: 600;
+}
+
+.stat-main-value {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 0;
+}
