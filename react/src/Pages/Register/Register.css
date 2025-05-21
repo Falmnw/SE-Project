@@ -5,13 +5,14 @@ body {
   }
   
   .brand-wrapper {
-    padding-top: 9px;
-    padding-bottom: 8px;
-    padding-left: 50px;
-  }
-  .brand-wrapper .logo {
-    height: 55px;
-  }
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 50px;
+}
+.brand-wrapper .logo {
+  height: 55px;
+}
+
   
   .register-section-wrapper {
     display: flex;
