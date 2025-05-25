@@ -91,7 +91,7 @@ const Dashboard = () => {
       <header className="top-header">
         <div className="header-left">
           <img src={placeholderLogo} alt="Logo" className="logo" />
-          <span className="logo-text">PURRFECT</span>
+          <span className="logo-text">PurrfectMatch</span>
         </div>
         <div className="header-right">
           <div className="notification-icon">
