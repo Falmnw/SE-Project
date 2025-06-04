@@ -370,3 +370,85 @@ body {
   font-weight: 500;
   padding: 8px 0;
 }
+
+.chat-forum {
+  padding: 1rem;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.chat-message {
+  margin-bottom: 0.5rem;
+}
+
+.chat-time {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.chat-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.chat-form button {
+  padding: 0.5rem 1rem;
+}
+
+.chat-box {
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-message {
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-break: break-word;
+}
+
+.even-message {
+  background-color: #f9f9f9;
+  align-self: flex-start;
+}
+
+.odd-message {
+  background-color: #eaeaea;
+  align-self: flex-start;
+}
+
+.own-message {
+  background-color: #cce5ff;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chat-time {
+  font-size: 11px;
+  margin-top: 4px;
+  color: #777;
+}
